@@ -1,0 +1,25 @@
+
+name: Deploy Github pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+      with:
+        persist-credentials: false
+    - name: Install and Build
+      run: |
+        npm install
+        npm run-script build 
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${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}
+        BRANCH: gh-pages
+        FOLDER: build
+        BUILD_SCRIPT: npm install && npm run build
