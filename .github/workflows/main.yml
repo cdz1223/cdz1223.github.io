@@ -28,7 +28,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${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}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           # Build output to publish to the `gh-pages` branch:
           publish_dir: ./build
           # The following lines assign commit authorship to the official
