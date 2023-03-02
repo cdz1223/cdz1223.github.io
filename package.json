@@ -7,5 +7,6 @@
     "test": "exit 0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {}
 }
