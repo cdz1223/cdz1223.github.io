@@ -1,0 +1,11 @@
+{
+  "name": "@cdz1223/cdz1223.github.io",
+  "version": "1.0.0",
+  "description": "for my package",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "author": "",
+  "license": "ISC"
+}
